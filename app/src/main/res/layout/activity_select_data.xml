@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090017">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/x93"
+        android:layout_height="@dimen/x90"
+        android:layout_marginTop="@dimen/x40"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/x32"
+        android:paddingTop="@dimen/x20"
+        android:paddingRight="@dimen/x32"
+        android:paddingBottom="@dimen/x20"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x379"
+        android:gravity="center"
+        android:padding="@dimen/x50"
+        android:text="@string/select_data_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_32" />
+
+    <LinearLayout
+        android:id="@+id/lyt_select_data_photo"
+        android:layout_width="@dimen/x470"
+        android:layout_height="@dimen/x96"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/bg_selected_btn"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x52"
+            android:layout_height="@dimen/x50"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_selected_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x26"
+            android:text="@string/select_data_photo"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_select_data_video"
+        android:layout_width="@dimen/x470"
+        android:layout_height="@dimen/x96"
+        android:layout_below="@+id/lyt_select_data_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x88"
+        android:background="@mipmap/bg_selected_btn"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x52"
+            android:layout_height="@dimen/x42"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_selected_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x26"
+            android:text="@string/select_data_video"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_32" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
